@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+}
+
+:root {
+  --primary-color:#4d83ff;
+  --primary-bold-color:#2e63db;
+  --warning-color:#ffc100;
+  --dark-color:#282f3a;
+  --lime-color:#71c016;
+  --p-1:1rem;
+  --p-2:2rem;
+  --p-3:3rem;
+  --p-4:4rem;
+  --p-5:5rem;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  background-color: var(--dark-color);
+  padding: 0 var(--p-4);
+  height: 80px;
+}
+
+.header .logo_box .logo {
+  padding: 20px 0;
+}
+
+.header .menu_box .menu {
+  float: right;
+  width: 100%;
+}
+
+.header .menu_box .menu i {
+  float: right;
+  color: aliceblue;
+  padding: 30px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header .menu_box ul {
+  padding: 20px 0;
+  width: 160px;
+  float: right;
+  text-align: left;
+  background-color: #282f3a;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.header .menu_box ul.show {
+  display: block;
+}
+
+.header .menu_box ul li {
+  list-style: none;
+  padding: 10px 10px;
+}
+
+.header .menu_box ul li:hover {
+  background-color: #2e63db;
+  color: #282f3a;
+}
+
+.header .menu_box ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Nunito',sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.container table {
+  width: 70%;
+  border-collapse: collapse;
+  border: 1px solid var(--dark-color);
+  margin: 50px auto !important;
+  text-align: center;
+}
+
+.container table .table_row:nth-child(even) {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.container table .table_head_row {
+  background-color: var(--dark-color);
+}
+
+.container table td {
+  padding: 10px 0 !important;
+  font-size: 14px;
+}
+
+.container table th {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-family: 'Nunito',sans-serif;
+  padding: 15px 0;
+}
+
+.container table img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.container table .add{
+  margin: 10px 20px !important;
+  float: right;
+}
+
+.container a{
+  text-decoration: none;
+  color: #111;
+}
+
+.btn {
+  padding: 7px 15px;
+  font-size: 13px;
+  margin:0 5px !important;
+}
+
+.btn_danger {
+  background-color: crimson;
+  color: #fff;
+  font-weight: 500px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn_warning {
+  background-color: var(--warning-color);
+  color: #111;
+  font-weight: 500px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn_primary {
+  background-color: var(--primary-bold-color);
+  color: #fff;
+  font-weight: 500px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form {
+  width: 50%;
+  text-align: center;
+  background-color: #282f3a;
+  padding: 50px 0;
+  margin: 10px auto;
+}
+
+.form h1 {
+  padding: 20px 0;
+  color: white;
+}
+
+.form input {
+  width: 80%;
+  padding: 15px 25px;
+  border: none;
+  margin: 10px 0;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form select {
+  width: 80%;
+  outline: none;
+  padding: 15px 25px;
+  background-color: #fff;
+  border: none;
+}
+
+.form select option {
+  background-color: #2e63db;
+  height: 50px;
+  color: white;
+  border: none !important;
+}
+
+.form input[type="file"] {
+  border: 1px solid white;
+}
+
+.form button {
+  width: 80%;
+  padding: 15px 0 !important;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.footer {
+  background-color: #4d83ff;
+  padding: 20px;
+  text-align: center;
+  color: aliceblue;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  table {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 730px) {
+  .container {
+    width: 90% !important;
+  }
+}
+
+.error{
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto;
+  background-color: crimson;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.success{
+  padding: 10px;
+  width: 80%;
+  margin: 10px auto;
+  background-color: rgba(85, 255, 204, 0.664);
+  color: #111;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
